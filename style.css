@@ -1,3 +1,85 @@
 *{
-    font-size: 15pt
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+div, header, footer{
+    display: flex;
+}
+header{
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    background-color: aqua;
+}
+
+.right{
+    background-color: lavender;
+    column-gap: 50px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.two{
+    flex-direction: row;
+    justify-content: space-between;
+    flex-shrink: 1;
+    background-color: lightpink
+}
+.left{
+    flex-direction: column;
+    background-color: lightblue;
+}
+
+
+img{
+    width: 300px;
+    height: auto;
+}
+
+.three{
+    flex-direction: column;
+    justify-content: center;
+    background-color: bisque;
+    align-items: center;
+}
+.group{
+    flex-direction:row;
+    justify-content: center;
+    gap: 50px;
+    background-color: brown;
+}
+.pair{
+    flex-direction: column;
+    align-items: center;
+    background-color:rosybrown;
+}
+.pair img{
+    width: auto;
+    height: 100px;
+}
+
+.four{
+    flex-direction: column;
+    background-color: aquamarine;
+}
+
+.five{
+    background-color:plum;
+    justify-content: space-around;
+    align-content: center;
+}
+.blue{
+    flex-direction: column;
+    background-color: #3882f6;
+}
+
+button{
+    width: fit-content;
+    height: fit-content;
+}
+
+footer{
+    justify-content: center;
 }
