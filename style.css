@@ -4,21 +4,30 @@
 body{
     margin: 0;
 }
-div, header, footer{ /*consider adding padding individually*/
+header, footer, .two, .three, .four{ /*consider adding padding individually*/
     display: flex;
-    padding-inline: 90px;
-    padding-block: 30px;
+    padding-inline: 200px;
+    padding-block: 20px;
 }
+div{
+    display: flex; 
+}
+p, h3{
+    margin: 0px;
+    padding: 0px;
+}
+
 header{
     flex-direction: row;
     justify-content: space-between;
     align-items: baseline;
     background-color: #1F2937;
     color: white;
+    padding-bottom: 80px;
 }
 
 .right{
-    column-gap: 30px;
+    gap: 30px;
 }
 
 a { /* header links */
@@ -30,11 +39,14 @@ a { /* header links */
     flex-direction: row;
     justify-content: space-evenly;
     background-color: #1F2937;
+    padding-bottom: 100px;
 }
 
 .left{
     flex-direction: column;
     justify-content: center; /*fix spacing*/
+    padding-right: 100px;
+    gap: 10px;
 }
 
 .main{
@@ -49,7 +61,7 @@ a { /* header links */
 }
 
 img{
-    width: 400px;
+    width: 500px;
     height: auto;
     border-radius: 8px;
     border-color: #3882f6; /* how to make border visible */
@@ -60,6 +72,8 @@ img{
     justify-content: center;
     background-color: white;
     align-items: center;
+    padding-block: 50px;
+    gap: 50px;
 }
 
 .infohead{
@@ -72,12 +86,16 @@ img{
     justify-content: space-evenly;
     background-color: white;
     margin-inline: 250px;
+    padding-bottom: 80px;
 }
 .pair{
     padding:20px;
     flex-direction: column;
     align-items: center;
     background-color:white;
+    gap: 10px;
+    color: rgb(89, 98, 109);
+    text-align: center;
 }
 .pair img{
     width: auto;
@@ -89,7 +107,7 @@ img{
     background-color: #e5e7eb;
     color: #1F2937;
     padding-inline: 350px;
-    padding-block: 50px;
+    padding-block: 100px;
 }
 
 #quote{
@@ -99,20 +117,29 @@ img{
 
 #author{
     text-align: right;
+    font-size: 23px;
 }
 
 .five{ /* has margins, does not reach edge of page */
     background-color:#3882f6;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
-    border-radius: 10px;
-    margin-inline: 150px;
+    border-radius: 8px;
+    margin-inline: 215px;
     margin-block: 100px;
+    padding-inline: 10px;
+    padding-block: 50px;
 }
+
+.five p{
+    color: #e5e7eb
+}
+
 .blue{
     flex-direction: column;
     background-color: #3882f6;
-    color: white
+    color: white;
+    gap: 8px;
 }
 
 button{
@@ -124,6 +151,7 @@ button{
     font-weight: bold;
     border-radius: 8px;
     padding: 8px 35px;
+    font-size: 16px;
 }
 
 .five button{
@@ -132,6 +160,7 @@ button{
 
 footer{
     background-color: #1F2937;
-    color: white;
+    color:#e5e7eb;
     justify-content: center;
+    padding: 40px;
 }
